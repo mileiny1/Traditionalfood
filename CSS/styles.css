@@ -1,0 +1,230 @@
+
+/* Basic reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+/* Style the section containers */
+section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    text-align: center;      /* Center text */
+    height: 100vh;           /* Optional: set height to fill viewport */
+    margin: 20px;            /* Optional: add margin for spacing */
+}
+
+/* Style the images */
+.centered-image {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the menu list */
+.menu {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style each menu item */
+.menu li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+/* Style the links */
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Add hover effect for links */
+.menu a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    color: #fff; /* Ensures text remains white on hover */
+}
+
+/* Add active link style (optional) */
+.menu a.active {
+       background-color: #575757;
+}
+
+/* Style the recipe container */
+.recipe {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style headings within the recipe */
+.recipe h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recipe h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Style list items within the recipe */
+.recipe ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.recipe ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.recipe-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.recipe {
+    margin-bottom: 20px;
+}
+
+.recipe h3 {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.ingredients, .instructions {
+    margin: 10px 0;
+}
+
+.ingredients ul, .instructions ol {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.ingredients li, .instructions li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        width: 95%;
+        padding: 10px;
+    }
+}
+/* Basic reset */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: center;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    text-align: center; /* Center the menu */
+    padding: 10px 0; /* Add some padding */
+}
+
+nav ul {
+    display: inline-block; /* Make the list inline */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block; /* Make the link block level for padding */
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Recipe container styling */
+.recipe-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the recipe container */
+    text-align: center; /* Center the text */
+}
+
+.recipe-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+/* Mobile styles using media queries */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
